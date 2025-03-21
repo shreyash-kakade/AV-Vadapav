@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100px;
+    height: 20px;
+    background-image: url("Images/AdminLoginImage.png");
+    background-size: cover;
+}
+
+/* Header Styling */
+.admin-header {
+    position: fixed;  
+    top: 0;            
+    left: 15;           
+    width: 100%;       
+    background-color: whitesmoke;
+    text-align: center;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffcc00;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+/* Sidebar Styling */
+.sidebar {
+    position: absolute;
+    top: 60px; 
+    left: 0;
+    width: 200px;
+    height: calc(100vh - 80px);
+    background-color: black;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin: 15px 0;
+}
+
+.sidebar a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: rgba(255, 204, 0, 0.3);
+    border-radius: 5px;
+}
+
+/* Main Content Area */
+.admin-content {
+    margin-left: 200px; /* To avoid sidebar overlap */
+    padding: 20px;
+}
+
+/* Section Styling */
+.admin-content section {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+

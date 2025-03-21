@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AV Vadapav</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial Rounded MT Bold', sans-serif;
+            background-color: rgb(201, 191, 178);
+            /* background: url('https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg') fixed; */
+            line-height: 1.6;
+        }
+
+        /* navigation bar */
+.navbar {
+    height: 60px;
+    width: 47%;
+    background-color: #ffffff;
+    font-size: 20px;
+    font-weight: 700;
+    border: 4px solid #e7d1b2;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    margin-left: 300px;
+    margin-top: 67px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.navi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    padding-top: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-logo {
+    height: 50px;
+    width: 50px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.logo {
+    background-image: url("logo.png");
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.border {
+    border: 2px solid transparent;
+}
+
+.border :hover {
+
+    font-size: 23px;
+
+}
+        /* header {
+            background: rgba(255, 204, 0, 0.95);
+            padding: 15px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1000;
+            text-align: center;
+        } */
+
+        .logo {
+            width: 200px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .contact-banner {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.pexels.com/photos/6646974/pexels-photo-6646974.jpeg');
+            height: 400px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contact-banner h2 {
+            color: #fff;
+            font-size: 3em;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .main-content {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .contact-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 40px;
+        }
+
+        .contact-info {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .info-box {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        .info-box i {
+            font-size: 2em;
+            color: #d9534f;
+            margin-bottom: 15px;
+        }
+
+        .contact-form {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ffcc00;
+            border-radius: 8px;
+            font-size: 16px;
+            margin: 8px 0;
+        }
+
+        button {
+            background: linear-gradient(45deg, #d9534f, #ff6b6b);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+            transition: transform 0.3s ease;
+        }
+
+        footer {
+            background: rgba(51, 51, 51, 0.95);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-banner h2 {
+                font-size: 2em;
+                padding: 0 20px;
+            }
+        }
+
+        .footer {
+    background-color: #382930ef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+    border-radius: 5em;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 30px 0px;
+    font-size: clamp(14px, 1.2vw, 35px);
+}
+
+.footerContent {
+    margin: 20px 0 50px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+    row-gap: 3em;
+}
+
+.brand {
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: 2.4em;
+    color: white;
+    font-weight: bold;
+    max-width: 7em;
+    text-align: center;
+}
+
+.brand img {
+    width: 130px;
+    height: 130px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 15em;
+    font-weight: bold;
+    color: white;
+}
+
+.address div img {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+.address hr {
+    width: 80%;
+}
+
+.address a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.quickLinks {
+    max-width: 7em;
+    color: white;
+}
+
+.quickLinks img {
+    width: 25px;
+}
+
+.quickLinks span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #F6D1AC;
+    width: max-content;
+    margin-left: -15px;
+}
+
+.quickLinks ul {
+    padding: 10px;
+    max-width: max-content;
+}
+
+.believes {
+    max-width: 15em;
+    color: white;
+}
+
+.believes span {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #F6D1AC;
+    margin-bottom: 10px;
+}
+
+.believes img {
+    width: 25px;
+}
+
+.copyright {
+    background-color: #9E7E7E55;
+    border-radius: 50px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    padding: 5px 50px;
+    margin-bottom: -30px;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="nav-logo">
+            <div class="logo"></div>
+        </div>
+
+        <nav class="navi">
+            <div class="navbar">
+                <div class="nav-home border">
+                    <a href="home.html" class="nav-link">Home</a>
+                </div>
+
+                <div class="nav-menu border">
+                    <a href="#" class="nav-link">About Us</a>
+                </div>
+
+                <div class="nav-franchise border">
+                    <a href="franchise.html" class="nav-link">Franchise</a>
+                </div>
+
+                <div class="nav-franchise border">
+                    <a href="#" class="nav-link">Gallery</a>
+                </div>
+
+                <div class="nav-contact border">
+                    <a href="contact us.html" class="nav-link">Contact Us</a>
+                </div>
+
+                <div class="nav-contact border">
+                    <a href="AdminLogin.php">Login</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="contact-banner">
+        <h2>Connect Us anytime</h2>
+    </section>
+
+    <div class="main-content">
+        <div class="contact-section">
+            <div class="contact-info">
+                <div class="info-box">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Main Outlet</h3>
+                    <p>Shop No.1,<br> Karad-Tasgaon road,<br>
+                        Kundal phata, Kundal,<br>
+                        Sangli - 416309,<br>
+                        Maharashtra.</p>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Contact Numbers</h3>
+                    <p>9975883988</p>
+                    <p>Open Daily: 9AM - 8.30PM</p>
+                </div>
+
+                <div class="info-box">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Addresses</h3>
+                    <p>ankushdhanave25@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2 style="margin-bottom: 25px; text-align: center;">Send Us a Message</h2>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Contact Number" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message →</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    
+        <footer class="footer">
+            <div class="footerContent">
+                <div class="brand">
+                    <img src="logo.png" alt="" />
+                    <span>AV <br>Vadapav</span>
+                </div>
+        
+                <div class="address">
+                    <span>Shop No.1, Karad-Tasgaon road,
+                        Kundal phata, Kundal,
+                        Sangli - 416309,<br>
+                        Maharashtra.</p></span>
+                    <hr />
+                    <div>
+                        <img src="fb.png" alt="" />
+                        <img src="insta.png" alt="" />
+                        <img src="x.png" alt="" />
+                        <img src="wp.png" alt="" />
+                    </div>
+                    <a href="mailto:ankushdhanave25@gmail.com">ankushdhanave25@gmail.com</a>
+                    <span>
+                        <a href="tel:9975883988">9975883988</a> 
+                    </span>
+                </div>
+        
+                <div class="quickLinks">
+                    <span>
+                        <img src="link.png" alt="" />
+                        <h4>Quick Links</h4>
+                    </span>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Franchise</li>
+                        <li>Gallery</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+        
+                <div class="believes">
+                    <span>
+                        <img src="link.png" alt="" />
+                        <h4>Our Beliefs</h4>
+                    </span>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fugiat placeat exercitationem incidunt molestiae alias, ipsa est dolorum deserunt vero?
+                    </p>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2025 AV Vadapav. All Rights Reserved.</p>
+        </footer>
+</body>
+</html>
