@@ -50,6 +50,65 @@
                 </div>
             </nav>
         </header>
+
+        <section class="slider">
+            <div class="slides">
+                <div class="image">
+                    <div class="photo">
+                        <img src="/slider-images/img-1.jpg" alt="img 1">
+                    </div>
+                    <div class="text-slider">
+                        <h2>Delicious Vadapav</h2>
+                        <p>
+                            Experience the taste of tradition and spices in every bite. Freshly made, hygienic, and
+                            filled
+                            with
+                            love.
+                        </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="photo">
+                        <img src="/slider-images/img-2.png" alt="img 2">
+                    </div>
+                    <div class="text-slider">
+                        <h2>Authentic Vadapav</h2>
+                        <p>
+                            Experience the taste of tradition and spices in every bite. Freshly made, hygienic, and filled
+                            with
+                            love.
+                        </p>
+                    </div>
+                </div>
+                <div class="image">
+                    <div class="photo">
+                        <img src="/slider-images/img-3.png" alt="img 3">
+                    </div>
+                    <div class="text-slider">
+                        <h2>Crunchy Vadapav</h2>
+                        <p>
+                            Experience the taste of tradition and spices in every bite. Freshly made, hygienic, and filled
+                            with
+                            love.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="button">
+                    <a onclick="nextimg(-1)" class="prev">&#10094;</a>
+                    <a onclick="nextimg(1)" class="next">&#10095;</a>
+                </div>
+
+                <div class="dots">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+
+            </div>
+
+        </section>
+
     </div>
 
     <div class="vadapav-background-img">
@@ -95,8 +154,9 @@
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-            <iframe class="yt-video" width="560" height="315" src="https://www.youtube.com/embed/-on4u-TIVYg?si=qNGW2Ej_gPpiMGwa"
-                title="YouTube video player" frameborder="0"
+            <iframe class="yt-video" width="560" height="315"
+                src="https://www.youtube.com/embed/-on4u-TIVYg?si=qNGW2Ej_gPpiMGwa" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -252,6 +312,9 @@
         </div>
         <p class="copyright">&copy; 2025 AV Vadapav. All Rights Reserved.</p>
     </footer>
+
+
+    <script src="home.js"></script>
 
 </body>
 
