@@ -69,6 +69,30 @@ body {
 
 }
 
+/* menu icon */
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #000000;
+    font-size: 30px;
+}
+
+/* close icon */
+.close-icon {
+    display: none;
+    align-self: flex-end;
+    top: 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.close-icon i {
+    font-size: 25px;
+    color: black;
+}
+
 /* About AV Vadapav text */
 .about-us-header{
     background-color: rgb(187, 185, 83);
@@ -224,19 +248,6 @@ body {
     to {
         transform: translateY(0);
         opacity: 1;
-    }
-}
-
-/*Responsive */
-@media (max-width: 768px) {
-    .vision-mission {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .vision,
-    .mission {
-        width: 80%;
     }
 }
 

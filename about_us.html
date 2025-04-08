@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Us</title>
     <link rel="stylesheet" href="about_us.css">
+    <link rel="stylesheet" href="about_us-responsive.css">
 </head>
 
 <body>
@@ -16,7 +17,17 @@
         </div>
 
         <nav class="navi">
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+
             <div class="navbar">
+
+                <div class="close-icon" onclick="toggleMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
                 <div class="nav-home border">
                     <a href="home.html">Home</a>
                 </div>
@@ -159,6 +170,26 @@
         </div>
         <p class="copyright">&copy; 2025 AV Vadapav. All Rights Reserved.</p>
     </footer>
+
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script> <!-- for menu-icon -->
+
+    <script>    // navbar
+        const menuIcon = document.querySelector(".menu-icon");
+        const closeIcon = document.querySelector(".close-icon");
+        const navbar = document.querySelector(".navbar");
+
+        
+        //Toggle navbar on hamburger click
+        menuIcon.addEventListener("click", () => {
+            navbar.classList.toggle("active");
+        });
+
+        // Also close navbar when ✕ icon is clicked
+        closeIcon.addEventListener("click", () => {
+            navbar.classList.remove("active");
+        });
+
+    </script>
 
 </body>
 

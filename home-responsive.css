@@ -1,0 +1,411 @@
+/* Responsive Styles */
+
+/* Tablets and small laptops */
+@media (max-width: 1200px) {
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        margin: 57px;
+        top: 30px;
+        right: 10px;
+        left: 10px;
+        width: 70%;
+        height: 50%;
+        background-color: #c28034;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 4;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: 4;
+        cursor: pointer;
+    }
+
+    .close-icon {
+        display: block;
+    }
+
+    .navi {
+        /* justify-content: center; */
+        height: auto;
+        padding: 0;
+    }
+
+    .logo {
+        height: 150px;
+        width: 150px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 3;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .nav-logo {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        color: white;
+    }
+    .slider {
+        margin-top: 6rem;
+    }
+
+    .slider .slides {
+        width: 85%;
+    }
+
+    .slides .image {
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .photo,
+    .text-slider {
+        width: 90%;
+        height: auto;
+    }
+
+    .photo img {
+        height: auto;
+        width: 100%;
+    }
+
+    .text-slider {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .text-slider h2 {
+        font-size: 2.2rem;
+    }
+
+    .text-slider p {
+        font-size: 1.3rem;
+        letter-spacing: 0.05rem;
+    }
+
+    .dots {
+        left: 43%;
+        bottom: 2rem;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 780px) {
+
+    .navbar {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        margin: 57px;
+        top: 30px;
+        right: 10px;
+        left: 10px;
+        width: 70%;
+        height: 50%;
+        background-color: #c28034;
+        padding: 20px;
+        border-radius: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 4;
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 30px;
+        z-index: 4;
+        cursor: pointer;
+    }
+
+    .close-icon {
+        display: block;
+    }
+
+    .navi {
+        /* justify-content: center; */
+        height: auto;
+        padding: 0;
+    }
+
+    .logo {
+        height: 100px;
+        width: 100px;
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 3;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .nav-logo {
+        padding: 0;
+        margin: 0;
+    }
+
+    .navbar a {
+        font-size: 18px;
+        color: white;
+    }
+
+    /* slider */
+    .slider {
+        margin-top: 50rem;
+    }
+
+    .slider .slides {
+        width: 95%;
+    }
+
+    .slides .image {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .photo,
+    .text-slider {
+        width: 100%;
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+        box-shadow: 0 0 0.4rem 0.1rem rgba(0, 0, 0, 0.3);
+    }
+
+    .text-slider {
+        padding: 15px;
+    }
+
+    .text-slider h2 {
+        font-size: 1.7rem;
+    }
+
+    .text-slider p {
+        font-size: 1.1rem;
+        line-height: 1.4;
+    }
+
+    .dots {
+        left: 40%;
+        bottom: 1rem;
+    }
+
+    .slides .button a {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 1.2rem;
+    }
+
+    .vadapav-sticky-img {
+        height: 100vh;
+        /* Smaller height for mobile */
+        width: 100%;
+    }
+
+    /* Our journey container */
+    .our-journey-container {
+        flex-direction: column;
+        height: auto;
+        width: 90%;
+        margin: 0 auto 100px auto;
+        border-radius: 30px;
+    }
+
+    .our-journey-img,
+    .our-journey-info {
+        width: 100%;
+        height: auto;
+        margin: 20px auto;
+    }
+
+    .shop-img {
+        border-radius: 30px;
+    }
+
+    .our-journey-text {
+        font-size: 150%;
+    }
+
+    .our-journey-paragraph {
+        font-size: 120%;
+        padding: 0 1rem;
+    }
+
+    .youtube {
+        flex-direction: column;
+        height: auto;
+        gap: 2rem;
+    }
+
+    .yt-video {
+        width: 90%;
+        height: 300px;
+    }
+
+    .text-slider h2 {
+        font-size: 2rem;
+    }
+
+    .text-slider p {
+        font-size: 1.2rem;
+    }
+
+    .our-journey-text {
+        width: 180px;
+        font-size: 130%;
+    }
+
+    .our-journey-paragraph {
+        font-size: 100%;
+    }
+
+    .slider {
+        margin-top: 5rem;
+    }
+
+    .dots {
+        left: 42%;
+    }
+
+    /* Vision-Mission Section */
+    .vision-mission {
+        flex-direction: column;
+        height: auto;
+        margin: 50px 0;
+        padding: 20px 10px;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .box h3 {
+        font-size: 28px;
+    }
+
+    .box p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    /* Menu Container */
+    .menu-container {
+        flex-direction: column;
+        height: auto;
+        width: 95%;
+        margin: 0 auto 100px;
+    }
+
+    .left-box,
+    .right-box {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+    }
+
+    .upper-lower-block {
+        flex-direction: column;
+    }
+
+    .menu {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .menu-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .menu-text {
+        font-size: 1.5rem;
+    }
+
+    .overlaped-box {
+        position: static;
+        margin: 20px auto;
+        width: 250px;
+        height: 250px;
+        z-index: 1;
+    }
+
+    .av-vadapav-yellow-sticker {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Address Section */
+    .address-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .left-block,
+    .location {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .vertical-block {
+        display: none;
+    }
+
+    .visit-now {
+        position: static;
+        width: 150px;
+        height: 150px;
+        font-size: 25px;
+        margin: 20px auto;
+    }
+
+    .location {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .location .address {
+        width: 90%;
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .map-location {
+        width: 100%;
+    }
+
+    .google-map {
+        width: 100%;
+        height: 300px;
+    }
+
+}

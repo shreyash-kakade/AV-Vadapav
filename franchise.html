@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Franchise</title>
     <link rel="stylesheet" href="franchise.css">
+    <link rel="stylesheet" href="franchise-responsive.css">
 </head>
 
 <body>
@@ -16,7 +17,17 @@
         </div>
 
         <nav class="navi">
+
+            <div class="menu-icon">
+                <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            </div>
+
             <div class="navbar">
+
+                <div class="close-icon" onclick="toggleMenu()">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+
                 <div class="nav-home border">
                     <a href="home.html" class="nav-link">Home</a>
                 </div>
@@ -42,9 +53,24 @@
                 </div>
             </div>
         </nav>
+
+        <div class="about-us-header">
+            <h1>Connect With Us</h1>
+        </div>
     </header>
 
     <div class="franchise-content">
+
+        <div class="quotes-container">
+            <span>
+                <h3>Connect With US</h3>
+            </span>
+            <div class="text-content">
+                Join the AV Vadapav family and be a part of our growing success. Let's bring the taste of AV Vadapav to
+                more people together! Get in touch today and take the first step toward your success. <br> <br> <strong>"Let's serve
+                smiles together! Reach out and start your AV Vadapav franchise today."</strong>
+            </div>
+        </div>
 
         <div class="enquiry-container">
             <h2>Franchise Enquiry</h2>
@@ -66,17 +92,6 @@
                 </div>
                 <button type="submit">Submit</button>
             </form>
-        </div>
-
-        <div class="quotes-container">
-            <span>
-                <h3>Connect With US</h3>
-            </span>
-            <div class="text-content">
-                Join the AV Vadapav family and be a part of our growing success. Let's bring the taste of AV Vadapav to
-                more people together! Get in touch today and take the first step toward your success. <br> <br> <strong>"Let's serve
-                smiles together! Reach out and start your AV Vadapav franchise today."</strong>
-            </div>
         </div>
 
     </div>
@@ -133,7 +148,8 @@
         <p class="copyright">&copy; 2025 AV Vadapav. All Rights Reserved.</p>
     </footer>
 
-
+    <script src="franchise.js"></script>
+    <script src="https://kit.fontawesome.com/f8e1a90484.js" crossorigin="anonymous"></script>  <!-- for menu-icon -->
 </body>
 
 </html>

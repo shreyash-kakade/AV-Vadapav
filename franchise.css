@@ -67,20 +67,63 @@
 
 }
 
+/* menu icon */
+.menu-icon{
+    display: none;
+}
+
+.menu-icon i{
+    color: #000000;
+    font-size: 30px;
+}
+
+/* close icon */
+.close-icon {
+    display: none;
+    align-self: flex-end;
+    top: 40px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.close-icon i {
+    font-size: 25px;
+    color: black;
+}
+
+/* Connect with us text */
+.about-us-header{
+    background-color: rgb(187, 185, 83);
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    /* text-transform: uppercase; */
+    letter-spacing: 1px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+
 
 /* Enquiry */
 
 .franchise-content {
     padding: 2rem 0 0 5rem;
+    gap: 10rem;
+    margin: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .enquiry-container {
     width: 30%;
     /* height: 43rem; */
-    margin: 50px auto;
-    padding: 30px;
+    /* margin: 50px auto; */
+    padding: 2rem;
     background: #ffffff;
-    border-radius: 20px;
+    border-radius: 1.5rem;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
     animation: fadeIn 1.2s ease-in-out;
@@ -155,13 +198,13 @@ button:hover {
 .quotes-container {
     width: 30%;
     /* height: rem; */
-    margin: 50px auto;
+    /* margin: 50px auto; */
     padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    /* background: #ffffff; */
+    /* background: linear-gradient(135deg, #f1e999, #d6d3cd); */
     border-radius: 20px;
     /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
     text-align: center;

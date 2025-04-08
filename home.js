@@ -1,41 +1,5 @@
-// var imageno =1;
-// displayimg(imageno);
 
-// function nextimg(n){
-//     displayimg(imageno += n)
-// }
-
-// function currentSlide(n){
-//     displayimg(imageno = n)
-// }
-
-// function displayimg(n){
-//     var i;
-//     var image = document.querySelectorAll(".slides .image");
-//     var dots = document.querySelectorAll(".dot");
-
-//     if(n > image.length){
-//         imageno = 1;
-//     }
-
-//     if(n < 1){
-//         imageno = image.length;
-//     }
-
-//     for(i=0 ; i < image.length ; i++){
-//         image[i].style.display = "none";
-//     }
-
-//     for(i=0 ; i < image.length ; i++){
-//         dots[i].className = dots[i].className.replace(" active", "");
-//     }
-
-//     image[imageno - 1].style.display = "block";
-//     dots[imageno - 1].className += " active";
-
-// }
-
-
+// slider
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -76,3 +40,21 @@ function showSlides(n) {
 setInterval(() => {
     nextimg(1);
 }, 5000);
+
+
+// navbar
+const menuIcon = document.querySelector(".menu-icon");
+const closeIcon = document.querySelector(".close-icon");
+const navbar = document.querySelector(".navbar");
+
+
+//Toggle navbar on hamburger click
+menuIcon.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});                           
+
+
+// Also close navbar when ✕ icon is clicked
+closeIcon.addEventListener("click", () => {
+    navbar.classList.remove("active");
+});
