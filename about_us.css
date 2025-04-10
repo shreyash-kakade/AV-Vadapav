@@ -2,7 +2,7 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff7e6;
+    background-color: #EEEDE7;
     text-align: center;
     color: #333;
 }
@@ -15,10 +15,7 @@ body {
     font-size: 20px;
     font-weight: 700;
     border: 4px solid #e7d1b2;
-    border-bottom-left-radius: 50px;
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 50px;
+    border-radius: 50px;
     margin-left: 300px;
     margin-top: 67px;
     display: flex;
@@ -35,11 +32,6 @@ body {
     justify-content: center;
     height: 60px;
     padding-top: 10px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: black;
 }
 
 .nav-logo {
@@ -59,15 +51,26 @@ body {
     z-index: 2;
 }
 
-.border {
-    border: 2px solid transparent;
+.navbar a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
 }
 
-.border :hover {
-
-    font-size: 23px;
-
+/* Hover effect on navbar*/
+.navbar a:hover {
+    background: linear-gradient(to right, #fceabb, #d8bc6e);
+    color: white;
 }
+
+/* Active link (if current page) */
+.navbar a.active {
+    background: linear-gradient(to right, #fceabb, #d8bc6e);
+    color: white;
+}
+
 
 /* menu icon */
 .menu-icon{
@@ -95,7 +98,7 @@ body {
 
 /* About AV Vadapav text */
 .about-us-header{
-    background-color: rgb(187, 185, 83);
+    background: linear-gradient(180deg, #7b8083, #cdcbd3);
     color: rgb(255, 255, 255);
     padding: 20px;
     font-size: 28px;
@@ -111,7 +114,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
-    background: rgb(255, 224, 178, 0.7);
+    background: linear-gradient(to top, #f1b2a0, rgb(255, 255, 255));
     border-radius: 10px;
     margin: 20px;
     transition: transform 0.3s;
@@ -151,6 +154,10 @@ body {
     font-size: 18px;
 }
 
+.owner-info h2{
+    color: rgb(255, 255, 255);
+}
+
 .about-us{
     display: flex;
     flex-direction: column;
@@ -158,7 +165,8 @@ body {
     text-align: justify;
     line-height: 1.5;
     padding: 40px 20px;
-    background: rgb(255, 224, 178, 0.7);
+    background: linear-gradient(180deg, #f1e498, rgb(233, 233, 210));
+    /* background: rgb(255, 224, 178, 0.7); */
     border-radius: 10px;
     margin: 20px;
     
@@ -166,7 +174,11 @@ body {
 
 .information{
     max-width: 600px;
-    font-size: 18px;
+    font-size: 20px;
+}
+
+.information h2 {
+    color: #bba110;
 }
 
 

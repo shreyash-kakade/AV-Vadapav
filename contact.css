@@ -1,12 +1,15 @@
-body{
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #EEEDE7;
-    font-family: 'Poppins', sans-serif;
-    box-sizing: border-box;
-    text-align: center;
 }
 
+body {
+    font-family: 'Arial Rounded MT Bold', sans-serif;
+    background-color: #EEEDE7;
+    /* background: url('https://img.freepik.com/free-photo/grunge-paint-background_1409-1337.jpg') fixed; */
+    line-height: 1.6;
+}
 
 /* navigation bar */
 .navbar {
@@ -73,13 +76,12 @@ body{
     color: white;
 }
 
-
 /* menu icon */
-.menu-icon{
+.menu-icon {
     display: none;
 }
 
-.menu-icon i{
+.menu-icon i {
     color: #000000;
     font-size: 30px;
 }
@@ -98,102 +100,67 @@ body{
     color: black;
 }
 
-/* About AV Vadapav text */
-.about-us-header{
-    background: linear-gradient(180deg, #7b8083, #cdcbd3);
-    color: rgb(255, 255, 255);
-    padding: 20px;
-    font-size: 28px;
-    font-weight: bold;
-    /* text-transform: uppercase; */
-    letter-spacing: 1px;
-    animation: fadeIn 2s ease-in-out;
+.header {
+    background: rgba(255, 204, 0, 0.95);
+    padding: 15px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1000;
+    text-align: center;
 }
 
-/* text of main branch photoes */
-.photo-text{
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #d32f2f;
-    /* background-color: aqua; */
+.logo {
+    width: 200px;
+    margin: 0 auto;
+    display: block;
 }
 
-.photo-text h3{
-    font-size: 30px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-/* Gallery photoes */
-.gallery{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.main-branch-photoes{
-    width: 65%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    animation: fadeIn 1.5s ease-in-out 0.5s forwards;
-    /* background-color: rgb(228, 220, 228); */
-    /* margin: 0px 0 30px 0; */
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.box {
-    height: 300px;
-    width: 30%;
-    flex-basis: 200;
-    background-color: white;
-    padding: 20px 0px 15px;
-    margin-top: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    
-}
-
-.box :hover {
-    transform: translateY(-8px);
-}
-
-.box-img {
+.contact-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://images.pexels.com/photos/6646974/pexels-photo-6646974.jpeg');
     height: 200px;
-    background-size:cover;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-/* .box6 .box-content div {
-    height: 275px;
-} */
-
-.box-content {
-    margin-left: 1rem;
-    margin-right: 1rem;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
 }
 
-.box-content p {
-    color: #007185;
+.contact-banner h2 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-/* .font {
-    font-size: 21px;
-} */
 
+.main-content {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
 
-/* footer */
+.contact-info {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.info-box {
+    margin-bottom: 30px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.07);
+}
+
+.info-box i {
+    font-size: 2em;
+    color: #d9534f;
+    margin-bottom: 15px;
+}
 
 .footer {
     background-color: #382930ef;

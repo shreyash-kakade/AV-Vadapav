@@ -1,8 +1,6 @@
 /*Responsive */
-
-
 /* Tablets and small laptops */
-@media (max-width: 1200px) {
+@media (max-width: 1430px) {
     .navbar {
         display: none;
         flex-direction: column;

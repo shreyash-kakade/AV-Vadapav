@@ -1,5 +1,5 @@
 /*Responsive */
-@media (max-width: 1200px) {
+@media (max-width: 1430px) {
 
     /* navbar */
     .navbar {
@@ -61,5 +61,15 @@
     .navbar a {
         font-size: 18px;
         color: white;
+    }
+
+
+    .contact-section {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-banner h2 {
+        font-size: 2em;
+        padding: 0 20px;
     }
 }

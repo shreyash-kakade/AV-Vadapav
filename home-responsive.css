@@ -1,7 +1,7 @@
 /* Responsive Styles */
 
 /* Tablets and small laptops */
-@media (max-width: 1200px) {
+@media (max-width: 1430px) {
     .navbar {
         display: none;
         flex-direction: column;
@@ -62,6 +62,7 @@
         font-size: 18px;
         color: white;
     }
+
     .slider {
         margin-top: 6rem;
     }
@@ -105,8 +106,204 @@
         left: 43%;
         bottom: 2rem;
     }
-}
 
+    /* Our journey */
+    .our-journey-container {
+        margin: 0 auto 150px auto;
+        width: 90%;
+        height: auto;
+        flex-direction: column;
+        border-radius: 30px;
+        padding: 2rem;
+    }
+
+    .our-journey-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .shop-img {
+        width: 100%;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .our-journey-info {
+        width: 100%;
+        margin: 2rem 0 0 0;
+        height: auto;
+        padding: 0 1rem;
+    }
+
+    .our-journey-text {
+        width: 100%;
+        max-width: 300px;
+        height: 60px;
+        font-size: 150%;
+    }
+
+    .our-journey-paragraph {
+        width: 100%;
+        height: auto;
+        font-size: 120%;
+    }
+
+    /* Vision & Mission section */
+    .vision-mission {
+        flex-direction: column;
+        height: auto;
+        padding: 40px 20px;
+        margin-bottom: 150px;
+    }
+
+    .box {
+        width: 90%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    .box h3 {
+        font-size: 28px;
+    }
+
+    .box p {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    /* Menu section */
+    .menu-container {
+        flex-direction: column;
+        height: auto;
+        width: 70%;
+        margin: 0 auto 150px auto;
+        border-radius: 20px;
+        padding: 20px 10px;
+    }
+
+    .left-box {
+        display: none;
+        /* Optional: Hide on tablets to save space */
+    }
+
+    .right-box {
+        width: 100%;
+        height: auto;
+    }
+
+    .upper-lower-block {
+        flex-direction: column;
+        height: auto;
+        gap: 20px;
+        padding: 10px 0;
+    }
+
+    .menu {
+        width: 60%;
+        height: auto;
+    }
+
+    .menu-img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .menu-text {
+        font-size: 150%;
+    }
+
+    .overlaped-box {
+        position: static;
+        width: 200px;
+        height: 200px;
+        margin: 20px auto;
+    }
+
+    .av-vadapav-yellow-sticker {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    /* Address section */
+    .address-container {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: center;
+      }
+    
+      .left-block {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        height: auto;
+        flex-direction: column;
+        position: relative;
+      }
+    
+      .vertical-block {
+        width: 100%;
+        height: 50px;
+        background-color: #c28181;
+      }
+    
+      .visit-now {
+        position: static;
+        width: 180px;
+        height: 180px;
+        font-size: 30px;
+        margin-top: 20px;
+      }
+    
+      .location {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        text-align: center;
+      }
+
+      .vertical-block {
+        display: none;
+    }
+    
+      .location .address {
+        width: 90%;
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+    
+      .map-location {
+        width: 90%;
+        height: 300px;
+      }
+
+    /* feedback */
+    .feedback-section {
+        flex-direction: column;
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .feedback-info,
+    .feedback-form {
+        width: 100%;
+    }
+
+    .feedback-info h2 {
+        font-size: 1.7rem;
+    }
+
+    .feedback-info p {
+        font-size: 1rem;
+    }
+
+}
+.vertical-block {
+    display: none;
+}
 /* Mobile devices */
 @media (max-width: 780px) {
 
@@ -319,7 +516,7 @@
     .menu-container {
         flex-direction: column;
         height: auto;
-        width: 95%;
+        width: 70%;
         margin: 0 auto 100px;
     }
 
@@ -359,6 +556,24 @@
     .av-vadapav-yellow-sticker {
         width: 100%;
         height: 100%;
+    }
+
+    /* feedback section */
+    .feedback-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .feedback-info p {
+        font-size: 0.95rem;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        font-size: 14px;
+    }
+
+    .feedback-form button {
+        font-size: 15px;
     }
 
     /* Address Section */
